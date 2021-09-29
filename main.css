@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+.main-content {
+    width:99vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.chess {
+    
+    border-collapse: collapse;
+    border:2px solid lightskyblue; 
+    transform: rotate(90deg);
+} 
+
+.rotate-blue {
+    width:100px;
+    height:50px;
+    background-color: lightskyblue;
+    border: none;
+    color: darkslategrey;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.rotate-pink {
+    width:100px;
+    height:50px;
+    background-color: lightpink;
+    border: none;
+    color: darkslategrey;
+    margin: 20px;
+    margin-right:40px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.chess tr td {
+    
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*tr td:nth-child(even) {
+    background-color:lightpink;
+}*/
+
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: rgb(248, 218, 222);
+}
+
+tr:nth-child(odd) td:nth-child(even){
+    background-color: lightsteelblue;
+}
+
+tr:nth-child(even) td:nth-child(odd){
+    background-color: lightsteelblue;
+}
+
+tr:nth-child(even) td:nth-child(even){
+    background-color: rgb(248, 218, 222);
+}
+
+
+.hidden {
+    color: rgba(117, 129, 141, 0);
+}
+
+tr:nth-child(5) td > h1{
+    transform: rotate(180deg);
+}
+
+tr:nth-child(6) td > h1 {
+    transform: rotate(180deg);
+}
+
+img {
+    height:60px
+}
+
+.pawns {
+    height: 40px;
+}
+
+.peices {
+    height: 60px;
+}
+
+.move-pawn2 {
+    transform: rotate(180deg);
+}
+
+.peices2 {
+    transform: rotate(180deg);
+}
+
+.hidden:hover{
+    color: rgb(117, 129, 141);
+}
+
+
+.move-pawn2:active {
+    transform: translateY(-75px);
+}
+
+
+.move-pawn:active {
+    transform: translateY(77px);
+}
+
+.rotate-blue:active~.chess {
+    transform: rotate(0deg);
+}
+
+.rotate-blue:active~table .move-pawn2 {
+    transform: rotate(0deg);
+}
+
+.rotate-blue:active~table .peices2 {
+    transform: rotate(0deg);
+}
+
+.rotate-pink:active~.chess {
+    transform: rotate(180deg);
+}
+
+.rotate-pink:active~table .peices1 {
+    transform: rotate(180deg);
+}
+
+.rotate-pink:active~table .move-pawn {
+    transform: rotate(180deg);
+}
+
+.rotate-pink:active~table .move-pawn2 {
+    transform: rotate(180deg);
+}
+
+.rotate-pink:active~table .peices2 {
+    transform: rotate(180deg);
+}
